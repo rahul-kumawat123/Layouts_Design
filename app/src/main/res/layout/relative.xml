@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/tv_restaurants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/restaurants"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="20sp"
+        android:textSize="30sp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="411dp"
+        android:layout_height="462dp"
+        android:layout_below="@+id/tv_restaurants"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="207dp"
+        android:backgroundTint="@color/white"
+        android:elevation="50sp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="309dp"
+            app:srcCompat="@drawable/layout" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25sp"
+            android:layout_marginTop="320dp"
+            android:gravity="center"
+            android:text="@string/ice_cream_sundae"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/address_tv"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:gravity="center"
+            android:text="@string/_145_mall_of_india"
+            android:textSize="15sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="380dp"
+            android:progressTint="@color/colorAccent"
+            android:rating="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140sp"
+            android:layout_marginTop="380dp"
+            android:text="@string/_520_reviews" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
